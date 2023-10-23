@@ -36,7 +36,9 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: test
-          path: website
+          path: |
+            website/
+            !website/node-modules/
 
   # deploy:
   #   needs: build
