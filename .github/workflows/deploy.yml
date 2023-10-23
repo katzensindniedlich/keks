@@ -28,13 +28,17 @@ jobs:
         run: |
           cd website
           bun install
-  
+
       - name: Build
         shell: bash
         run: |
           cd website
-          bun run astro build
+          bun run build
 
+      - uses: actions/upload-artifact@v3
+        with:
+          name: my-artifact
+          path: path/to/artifact/world.txt
 
   # deploy:
   #   needs: build
