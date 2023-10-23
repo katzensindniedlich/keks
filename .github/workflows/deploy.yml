@@ -41,6 +41,15 @@ jobs:
       deployments: write
 
     steps:
+      - name: Debug
+        shell: bash
+        run: |
+          pwd
+          ls
+          cd website
+          pwd
+          ls
+
       - name: Deploy Website
         uses: cloudflare/pages-action@v1
         with:
