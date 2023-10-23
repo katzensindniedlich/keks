@@ -1,7 +1,5 @@
 name: deploy
 
-# on: workflow_dispatch
-
 on:
   push:
     paths: website/**
