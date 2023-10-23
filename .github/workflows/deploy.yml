@@ -25,20 +25,17 @@ jobs:
 
       - name: Install Dependencies
         shell: bash
-        run: |
-          cd website
-          bun install
+        working-directory: website
+        run: bun install
 
       - name: Build
         shell: bash
-        run: |
-          cd website
-          bun run build
+        working-directory: website
+        run: bun run build
 
       - uses: actions/upload-artifact@v3
         with:
-          name: my-artifact
-          path: path/to/artifact/world.txt
+          name: test
 
   # deploy:
   #   needs: build
