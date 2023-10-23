@@ -38,7 +38,7 @@ jobs:
           name: test
           path: |
             website/
-            !website/node-modules/
+            !website/node-modules/**
 
   # deploy:
   #   needs: build
