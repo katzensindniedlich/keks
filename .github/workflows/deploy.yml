@@ -2,11 +2,6 @@ name: deploy
 
 on: workflow_dispatch
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
 concurrency:
   group: deploys
   cancel-in-progress: true
@@ -17,22 +12,40 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
-        
-      - name: Build Website
-        uses: withastro/action@v1
+        uses: actions/checkout@v4
         with:
-          path: website
-          package-manager: npm@latest
+          sparse-checkout: website
+          sparse-checkout-cone-mode: false
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
 
-    steps:
-      - name: Deploy Website
-        id: deployment
-        uses: actions/deploy-pages@v2
+      - name: Setup Node
+        uses: actions/setup-node@v4
+
+      - name: Install Dependencies
+        shell: bash
+        run: |
+          cd website
+          bun install
+  
+      - name: Build
+        shell: bash
+        run: |
+          cd website
+          bun run astro build
+
+
+  # deploy:
+  #   needs: build
+  #   runs-on: ubuntu-latest
+
+  #   steps:
+  #     - name: Deploy Website
+  #       uses: cloudflare/pages-action@v1
+  #       with:
+  #         apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+  #         accountId:
+  #         projectName: 
+  #         directory: website/dist
+  #         gitHubToken: ${{ secrets.GITHUB_TOKEN }}
