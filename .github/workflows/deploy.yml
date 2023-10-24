@@ -2,8 +2,8 @@ name: deploy
 
 on:
   workflow_dispatch:
-  push:
-    paths: website/**
+  # push:
+  #   paths: website/**
 
 concurrency:
   group: deploys
