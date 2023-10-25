@@ -1,1 +1,16 @@
+[project]
+name = "bibar"
+version = "0.0.0"
+readme = ".github/README.md"
+dependencies = [
 
+]
+
+project.license]
+file = "LICENCE"
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "pytest-md"
+]
