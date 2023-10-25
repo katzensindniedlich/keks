@@ -2,11 +2,11 @@ name: Lint
 
 on: 
   workflow_dispatch:
-  # push:
-  #   paths: '**.py'
-  # pull_request:
-  #   paths: '**.py'
-  #   types: [opened, reopened, synchronize]
+  push:
+    paths: '**.py'
+  pull_request:
+    paths: '**.py'
+    types: [opened, reopened, synchronize]
 
 jobs:
   lint:
