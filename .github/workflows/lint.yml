@@ -11,7 +11,7 @@ on:
 jobs:
   lint:
     runs-on: ubuntu-latest
-    name: Python Lint ${{ matrix.python-version }}
+    name: Lint Python ${{ matrix.python-version }}
     strategy:
       fail-fast: false
       matrix:
