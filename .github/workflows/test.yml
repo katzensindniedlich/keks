@@ -34,7 +34,7 @@ jobs:
       - name: Install Requirements
         run: python -m pip install --upgrade .[test]
 
-      - name: Test
+      - name: Run Tests
         uses: pavelzw/pytest-action@v2
         with:
           emoji: false
