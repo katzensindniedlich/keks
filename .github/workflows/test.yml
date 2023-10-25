@@ -35,3 +35,4 @@ jobs:
         with:
           emoji: false
           report-title: Report
+          click-to-expand: false
