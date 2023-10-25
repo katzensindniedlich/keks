@@ -15,5 +15,5 @@ test = [
     "pytest-md"
 ]
 
-[tool.setuptools.packages.find]
-include = ["bibar"]
+[tool.setuptools]
+packages = ["bibar"]
