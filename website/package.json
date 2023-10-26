@@ -6,6 +6,10 @@
         "build": "astro build"
     },
     "dependencies": {
-        "astro": "^3.3.2"
+        "astro": "^3.3.2",
+        "astro-compress": "^2.1.6"
+    },
+    "devDependencies": {
+        "sass": "^1.69.3"
     }
 }
