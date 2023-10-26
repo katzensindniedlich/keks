@@ -1,0 +1,11 @@
+{
+    "name": "bibar",
+    "type": "module",
+    "version": "0.0.1",
+    "scripts": {
+        "build": "astro build"
+    },
+    "dependencies": {
+        "astro": "^3.3.2"
+    }
+}
