@@ -1,12 +1,12 @@
-import Compress from 'astro-compress'
+//import Compress from 'astro-compress'
 import { defineConfig } from 'astro/config'
 
 
 export default defineConfig(
     {
-        site: 'https://kekse.pages.dev',
-        integrations: [
-            Compress()
-        ]
+        site: 'https://kekse.pages.dev'
+//        integrations: [
+//            Compress()
+//        ]
     }
 )
