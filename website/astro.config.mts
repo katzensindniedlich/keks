@@ -1,4 +1,3 @@
-import Compress from "astro-compress"
 import { defineConfig } from 'astro/config'
 
 
