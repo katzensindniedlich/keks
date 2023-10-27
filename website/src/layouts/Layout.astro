@@ -1,7 +1,7 @@
 ---
 import '@styles/global.scss'
 
-const slug = Astro.url.pathname.split('/').at(-1) || 'Home'
+const name = Astro.url.pathname.split('/').at(-1) || 'Home'
 
 const { title=slug.charAt(0).toUpperCase() + slug.substring(1) } = Astro.props
 ---
