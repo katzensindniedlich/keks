@@ -7,6 +7,9 @@ export default defineConfig(
         site: 'https://kekse.pages.dev',
         integrations: [
             Compress()
-        ]
+        ],
+        redirects: {
+            '/404': '/'
+        }
     }
 )

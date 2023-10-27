@@ -1,12 +1,13 @@
 ---
 import '@styles/global.scss'
+import { langtag } from '@config'
 
 const name = Astro.url.pathname.split('/').at(-1) || 'Home'
 
 const { title=slug.charAt(0).toUpperCase() + slug.substring(1) } = Astro.props
 ---
 
-<html>
+<html lang={langtag}>
     <head>
         <meta charset=utf-8>
         <meta name=viewport content="width=device-width, initial-scale=1">
