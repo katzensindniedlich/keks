@@ -5,4 +5,5 @@
   Permissions-Policy: camera=(), geolocation=(), microphone=(), payment=()
   Cache-Control: public, max-age=300, immutable
   Content-Security-Policy: default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self'
+  Access-Control-Allow-Methods: GET, OPTIONS
   ! Access-Control-Allow-Origin
