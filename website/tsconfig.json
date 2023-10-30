@@ -3,6 +3,7 @@
     "compilerOptions": {
       "baseUrl": ".",
       "paths": {
+        "@utils": ["utils.mts"],
         "@config": ["config.mts"],
         "@images/*": ["src/assets/images/*"],
         "@public/*": ["public/*"],
