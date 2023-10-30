@@ -9,7 +9,7 @@ import Favicon from '@components/Favicon.astro'
 
 var title = Astro.props.title
 
-if (title === undefined) {
+if (!title) {
     const 
         parts = Astro.url.pathname.split('/'),
         name = parts.at(-1) || 'Home'
