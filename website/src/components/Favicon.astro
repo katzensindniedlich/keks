@@ -1,5 +1,6 @@
 ---
-const { favicon } = Astro.props
+const { src, width, height, format } = Astro.props.source
 ---
 
-<link rel=icon href={favicon.src} type=image/svg+xml>
+<link rel=icon href={src} type=image/svg+xml>
+

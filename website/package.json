@@ -6,7 +6,9 @@
         "build": "astro check && astro build"
     },
     "dependencies": {
-        "astro": "^3.4.0"
+        "astro": "^3.4.0",
+        "astro-robots-txt": "^1.0.0",
+        "@astrojs/sitemap": "^3.0.2"
     },
     "devDependencies": {
         "sass": "^1.69.5",

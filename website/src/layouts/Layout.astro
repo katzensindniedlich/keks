@@ -7,6 +7,9 @@ import SEO from '@components/SEO.astro'
 import Favicon from '@components/Favicon.astro'
 
 
+const { description } = Astro.props
+
+
 var title = Astro.props.title
 
 if (!title) {
@@ -22,10 +25,10 @@ if (!title) {
     <head>
         <meta charset=utf-8>
         <meta name=viewport content="width=device-width, initial-scale=1">
-        <title set:html={title} />
+        <title>{title}</title>
         <Favicon>
         <slot name=head>
-        <SEO>
+        <SEO description={description}>
     </head>
     <body>
         <slot>
