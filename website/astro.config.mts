@@ -7,14 +7,14 @@ import { defineConfig } from 'astro/config'
 export default defineConfig(
     {
         site: 'https://kekse.pages.dev',
-        build: {
-            assets: 'assets/bundle'
-        },
         integrations: [
             sitemap({
                 lastmod: new Date()
               }),
             robotsTxt()
-        ]
+        ],
+        build: {
+            assets: 'assets'
+        }
     }
 )

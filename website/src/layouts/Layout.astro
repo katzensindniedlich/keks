@@ -5,7 +5,7 @@ import { langtag } from '@config'
 
 import SEO from '@components/SEO.astro'
 import Favicon from '@components/Favicon.astro'
-
+import { ViewTransitions } from "astro:transitions"
 
 const { description } = Astro.props
 
@@ -28,6 +28,7 @@ if (!title) {
         <title>{title}</title>
         <Favicon>
         <slot name=head>
+        <ViewTransitions>
         <SEO description={description}>
     </head>
     <body>

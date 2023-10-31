@@ -1,6 +1,28 @@
 ---
-const { src, width, height, format } = Astro.props.source
+// im tired and lonely today
+// ill stop here and eat something
+
+const isVector = format => (false)
+const getType = format => `image/${format}`
 ---
 
-<link rel=icon href={src} type=image/svg+xml>
+{
+    Astro.props.icons?.map(
+        icon => {
+            if (typeof icon === 'string' || isVector(icon.format)) {
+                return (
+                    <link rel=icon href={icon} type={getType(icon.format || icon.split('/').at(-1))}>
+                )
+            }
 
+            const 
+                { src, width, height, format } = icon,
+                sizes = `${height}x${width}`
+
+            return (
+                <link rel=icon href={src} sizes={sizes} type={getType(format)}>
+                (format === 'png' && <link rel=apple-touch-icon href={src} sizes={sizes}>)
+            )
+        }
+    )
+}
