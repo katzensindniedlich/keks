@@ -33,3 +33,7 @@ __author__ = 'katzensindniedlich'
 __version__ = version_info.to_string()
 __license__ = 'MIT'
 __copyright__ = 'Copyright 2023-present katzensindniedlich'
+
+
+
+del NamedTuple, Literal, VersionInfo
