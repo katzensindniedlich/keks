@@ -9,6 +9,9 @@ dependencies = [
 [project.license]
 file = "LICENCE"
 
+[project.urls]
+Homepage = ""
+
 [project.optional-dependencies]
 test = [
     "pytest",
@@ -16,4 +19,6 @@ test = [
 ]
 
 [tool.setuptools]
-packages = ["keks"]
+packages = [
+    "keks"
+]
