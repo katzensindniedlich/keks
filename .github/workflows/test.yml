@@ -4,11 +4,11 @@ on:
   workflow_dispatch:
   push:
     paths: 
-      - bibar/**.py
+      - keks/**.py
       - tests/**.py
   pull_request:
     paths: 
-      - bibar/**.py
+      - keks/**.py
       - tests/**.py
     types: [opened, reopened, synchronize]
 
