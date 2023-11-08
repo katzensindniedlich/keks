@@ -37,4 +37,4 @@ packages = [
 ]
 
 [tool.setuptools.dynamic]
-version = {attr = "keks.__version__"}
+version.attr = "keks.__version__"
