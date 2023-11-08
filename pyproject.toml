@@ -1,5 +1,5 @@
 [project]
-name = "bibar"
+name = "keks"
 version = "0.0.0"
 readme = ".github/README.md"
 dependencies = [
@@ -16,4 +16,4 @@ test = [
 ]
 
 [tool.setuptools]
-packages = ["bibar"]
+packages = ["keks"]
