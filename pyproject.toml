@@ -2,8 +2,7 @@
 name = "keks"
 readme = ".github/README.md"
 dynamic = [
-    "version", 
-    "description"
+    "version"
 ]
 keywords = []
 classifiers = [
@@ -36,3 +35,8 @@ keks = "keks.__main__:cli"
 packages = [
     "keks"
 ]
+
+[tool.setuptools.dynamic]
+version = {
+    attr = "keks.__version__"
+}
