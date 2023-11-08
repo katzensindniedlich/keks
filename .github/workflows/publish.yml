@@ -2,16 +2,16 @@ name: Publish
 
 on:
   workflow_dispatch:
-  # push:
-  #   paths: keks/__init__.py
+  release:
+    types: [released]
 
 concurrency: pypi
 
 jobs:	
   publish:
     runs-on: ubuntu-latest
-    permissions:
-      id-token: write
+    # permissions:
+    #   id-token: write
 
     steps:
       - name: Checkout
