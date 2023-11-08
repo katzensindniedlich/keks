@@ -1,7 +1,16 @@
 [project]
 name = "keks"
-version = "0.0.0"
 readme = ".github/README.md"
+dynamic = [
+    "version", 
+    "description"
+]
+keywords = []
+classifiers = [
+    "Topic :: Education",
+    "Natural Language :: German",
+    "License :: OSI Approved :: MIT License"
+]
 dependencies = [
 
 ]
@@ -10,13 +19,18 @@ dependencies = [
 file = "LICENCE"
 
 [project.urls]
-Homepage = ""
+Author = "https://github.com/katzensindniedlich"
+Source = "https://github.com/katzensindniedlich/keks"
+Webpage = "https://schokokeks.pages.dev"
 
 [project.optional-dependencies]
 test = [
     "pytest",
     "pytest-md"
 ]
+
+[project.scripts]
+keks = "keks.__main__:cli"
 
 [tool.setuptools]
 packages = [
