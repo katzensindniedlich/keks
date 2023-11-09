@@ -30,12 +30,10 @@ jobs:
         uses: actions/setup-node@v4
 
       - name: Install
-        shell: bash
         working-directory: website
         run: bun install
 
       - name: Build Website
-        shell: bash
         working-directory: website
         run: bun run build
 
