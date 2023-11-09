@@ -1,15 +1,35 @@
 name: Release
 
 on:
-  workflow_dispatch:
   release:
     types: [released]
+  
+  workflow_dispatch:
+    # inputs:
+    #   title:
+    #     required: true
+    #     type: string
+    #     description: Release title 
+    #   description:
+    #     required: false
+    #     type: string
+    #     description: Describe this release
+    #   pre-release:
+    #     default: false
+    #     type: boolean
+    #     description: This release will be labeled as non-production ready
+    #   generate_release_notes:
+    #     default: true
+    #     type: boolean
+    #     description: Whether to automatically generate the name and body for this release
 
 concurrency: releases
 
 jobs:	
   release:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout
@@ -25,7 +45,14 @@ jobs:
         run: python -m pip install --upgrade .
 
       # - name: Release
+      #   if: github.event_name == 'workflow_dispatch'
       #   uses: softprops/action-gh-release@v1
+      #   with:
+      #     name: ${{ github.event.inputs.title }}
+      #     body: ${{ github.event.inputs.description }}
+      #     prerelease: ${{ github.event.inputs.pre-release }}
+      #     generate_release_notes: ${{ github.event.inputs.generate_release_notes }}
+      #     fail_on_unmatched_files: true
 
       - name: Publish
         uses: pypa/gh-action-pypi-publish@release/v1
