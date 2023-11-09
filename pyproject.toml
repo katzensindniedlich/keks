@@ -1,6 +1,7 @@
 [project]
 name = "keks"
 readme = ".github/README.md"
+description = "for a school project"
 dynamic = [
     "version"
 ]
@@ -10,12 +11,10 @@ classifiers = [
     "Natural Language :: German",
     "License :: OSI Approved :: MIT License"
 ]
-dependencies = [
-
-]
+dependencies = []
 
 [project.license]
-file = "LICENCE"
+file = "LICENSE"
 
 [project.urls]
 Author = "https://github.com/katzensindniedlich"
