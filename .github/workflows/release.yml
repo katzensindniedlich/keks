@@ -35,7 +35,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          sparse-checkout: !website
+          sparse-checkout: '!website'
 
       - name: Setup Python
         uses: actions/setup-python@v4
