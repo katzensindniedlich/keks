@@ -15,7 +15,7 @@ on:
         description: Label as non-production ready
 
 jobs:	
-  release:
+  Release:
     runs-on: ubuntu-latest
     permissions:
       contents: write

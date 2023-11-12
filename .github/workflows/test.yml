@@ -13,7 +13,7 @@ on:
     types: [opened, reopened, synchronize]
 
 jobs:
-  test:
+  Test:
     runs-on: ubuntu-latest
     name: Test Python ${{ matrix.python-version }}
     strategy:

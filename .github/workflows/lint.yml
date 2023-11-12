@@ -9,7 +9,7 @@ on:
     types: [opened, reopened, synchronize]
 
 jobs:
-  lint:
+  Lint:
     runs-on: ubuntu-latest
     name: Lint Python ${{ matrix.python-version }}
     strategy:
