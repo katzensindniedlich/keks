@@ -1,7 +1,6 @@
 name: Lint
 
-on: 
-  workflow_dispatch:
+on:
   push:
     paths: '**.py'
   pull_request:
@@ -20,10 +19,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          sparse-checkout: |
-            keks
-            tests
 
       - name: Setup Python
         uses: actions/setup-python@v4
