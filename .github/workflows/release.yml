@@ -8,11 +8,6 @@ on:
     tags: v*
 
   workflow_dispatch:
-    inputs:
-      pre-release:
-        default: false
-        type: boolean
-        description: Label as non-production ready
 
 jobs:	
   Release:
@@ -43,7 +38,9 @@ jobs:
 
       - name: Get Version
         if: github.event_name == 'workflow_dispatch'
-        run: echo "VERSION=$(python -c "import keks;print(keks.__version__)")" >> $GITHUB_OUTPUT 
+        run: |
+          echo "VERSION=$(python -c "import keks;print(keks.__version__)")" >> $GITHUB_OUTPUT
+          echo "LEVEL=$(python -c "import keks;print(keks.version_info.releaselevel)")" >> $GITHUB_OUTPUT 
         id: version
 
       - name: Release
@@ -54,7 +51,7 @@ jobs:
         with:
           name: ${{ steps.version.outputs.VERSION }}
           tag_name: v${{ steps.version.outputs.VERSION }}
-          prerelease: ${{ github.event.inputs.pre-release }}
+          prerelease: ${{ steps.version.outputs.LEVEL != 'final' }}
           generate_release_notes: true
 
       - name: Build
