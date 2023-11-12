@@ -9,10 +9,6 @@ on:
 
   workflow_dispatch:
     inputs:
-      # version:
-      #   required: true
-      #   type: string
-      #   description: The release version
       pre-release:
         default: false
         type: boolean
