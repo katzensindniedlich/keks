@@ -3,7 +3,6 @@ name: Lint
 on:
   push:
     paths: '**.py'
-
   pull_request:
     paths: '**.py'
     types: [opened, reopened, synchronize]
