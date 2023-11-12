@@ -31,8 +31,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Release
         if: github.event_name == 'push'
@@ -57,14 +55,14 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
-          # cache: pip
+          cache: pip
           python-version: 3.x
 
       - name: Install
-        run: python -m pip install --upgrade . flit
+        run: python -m pip install flit
 
       - name: Build
-        run: flit build
+        run: python -m flit build
 
       - name: Publish
         uses: pypa/gh-action-pypi-publish@release/v1
