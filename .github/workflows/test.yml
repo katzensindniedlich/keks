@@ -5,6 +5,7 @@ on:
     paths: 
       - keks/**.py
       - tests/**.py
+
   pull_request:
     paths: 
       - keks/**.py
