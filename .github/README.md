@@ -5,12 +5,10 @@
 
 ## Anforderungen
 
-Benötigt wird **Python**  
-Installieren Sie hierfür am besten die [neuste][python] Version.
+Benötigt wird **Python**, nutzen Sie am besten die [neuste][python] Version.
 
 > [!IMPORTANT]  
-> Achten sie darauf, Python beim Installationsprozess zu **PATH** hinzuzufügen  
-> und den package manager pip mit auszuwählen. 
+> Achten Sie darauf, Python beim Installationsprozess zu **PATH** hinzuzufügen
 
 ## Installation
 
@@ -20,7 +18,7 @@ pip install -U keks
 ```
 
 > [!NOTE]  
-> Wenn Sie pip mit Python nicht installiert haben oder pip nicht erkannt wird,  
+> Wenn Sie pip nicht mit Python installiert haben oder pip nicht erkannt wird,  
 > führen Sie für pip zuvor noch `python -m ensurepip -U` aus.
 
 ## Verwendung
