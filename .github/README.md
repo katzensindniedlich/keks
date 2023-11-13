@@ -20,7 +20,7 @@ pip install -U keks
 ```
 
 > [!NOTE]
-> Wenn Sie pip mit Python nicht installiert haben und pip nicht erkannt wird,  
+> Wenn Sie pip mit Python nicht installiert haben oder pip nicht erkannt wird,  
 > führen Sie für pip zuvor noch `python -m ensurepip -U` aus.
 
 
