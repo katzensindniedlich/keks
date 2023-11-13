@@ -15,7 +15,7 @@ keks --help
 ```
 
 Oder Sie nutzen das Paket in Ihrem eigenen Projekt
-```python
+```python [project.py]
 import keks
 
 print('Ich nutze keks version:', keks.__version__)
