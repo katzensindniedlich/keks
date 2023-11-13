@@ -9,7 +9,7 @@
 [![Python][python-shield]][python]
 
 > [!IMPORTANT]  
-> Achten Sie darauf, Python zum **PATH** hinzugefügt zu haben
+> Stellen Sie sicher, dass Sie Python zum **PATH** hinzugefügt haben
 
 ## Installation
 
