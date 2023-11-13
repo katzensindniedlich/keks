@@ -6,18 +6,17 @@
 
 ## Installation
 
-Das Paket kann mit pip installiert werden.  
-Führen sie dafür folgendes in der Console aus
+Das Paket kann nun mit pip installiert werden 
 ```shell
 pip install -U keks
 ```
 
-Jetzt können Sie keks im Terminal ausführen
+Danach können Sie keks im Terminal ausführen
 ```shell
 keks --help
 ```
 
-Oder Sie nutzen das Paket in Ihrem eigenen Projekt
+Oder nutzen Sie das Paket in Ihrem eigenen Projekt
 ```python [project.py]
 import keks
 
