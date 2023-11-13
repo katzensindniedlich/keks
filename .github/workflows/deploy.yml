@@ -11,6 +11,7 @@ concurrency:
 jobs:
   Deploy:
     runs-on: ubuntu-latest
+    environment: deploy
     permissions:
       contents: read
       deployments: write
