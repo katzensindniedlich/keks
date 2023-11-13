@@ -9,7 +9,7 @@ Benötigt wird **Python**
 Installieren Sie hierfür am besten die [neuste][python] Version.
 
 > [!IMPORTANT]  
-> Achten sie darauf, Python beim Installationsprozess zu **PATH** hinzuzufügen
+> Achten sie darauf, Python beim Installationsprozess zu **PATH** hinzuzufügen  
 > und den package manager pip mit auszuwählen. 
 
 ## Installation
