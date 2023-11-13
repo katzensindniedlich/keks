@@ -3,14 +3,14 @@
 [python]: https://www.python.org/downloads/
 [website]: https://schokokeks.pages.dev
 
-## Anforderungen
+### Anforderungen
 
 Benötigt wird **Python**, nutzen Sie am besten die [neuste][python] Version.
 
 > [!IMPORTANT]  
-> Achten Sie darauf, Python beim Installationsprozess zu **PATH** hinzuzufügen
+> Achten Sie darauf, Python beim Installationsprozess zum **PATH** hinzuzufügen
 
-## Installation
+### Installation
 
 Das Paket kann nun mit pip installiert werden! 
 ```shell
@@ -21,7 +21,7 @@ pip install -U keks
 > Wenn Sie pip nicht mit Python installiert haben oder pip nicht erkannt wird,  
 > führen Sie für pip zuvor noch `python -m ensurepip -U` aus.
 
-## Verwendung
+### Verwendung
 
 Danach können Sie keks im Terminal ausführen
 ```shellOder nutzen Sie das Paket in Ihren eigenem Projekt
