@@ -1,9 +1,10 @@
 [pip]: https://pip.pypa.io/en/stable/
 [pypi]: https://pypi.org/project/keks
+[python]: https://www.python.org/downloads/
 [website]: https://schokokeks.pages.dev
 
 
-### Installation
+## Installation
 
 Das Paket kann mit pip installiert werden
 Führen sie dafür folgendes in der Console aus
