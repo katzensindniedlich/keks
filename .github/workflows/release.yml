@@ -14,7 +14,9 @@ concurrency: releases
 jobs:	
   Release:
     runs-on: ubuntu-latest
+    environment: release
     permissions:
+      id-token: write
       contents: write
 
     steps:
@@ -61,5 +63,3 @@ jobs:
 
       - name: Publish
         uses: pypa/gh-action-pypi-publish@release/v1
-        with:
-          password: ${{ secrets.PYPI_API_TOKEN }}
