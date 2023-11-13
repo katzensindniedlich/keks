@@ -5,9 +5,8 @@
 
 ## Anforderungen
 
-Keks benötigt [Python](python),  
+Keks benötigt [Python][python],  
 downloaden und installieren sie hierfür am besten die neuste Version
-
 
 > [!IMPORTANT]  
 > Die restliche Dokumentation geht davon aus,  
@@ -15,14 +14,15 @@ downloaden und installieren sie hierfür am besten die neuste Version
 
 ## Installation
 
-Das Paket kann nun mit pip installiert werden 
+Das Paket kann nun mit pip installiert werden! 
 ```shell
 pip install -U keks
 ```
 
 > [!NOTE]  
-> Wenn Sie pip beim Installationsprozess von Python nicht installiert haben,  
-> 
+> Wenn Sie pip mit Python nicht installiert haben und nicht erkannt wird,   
+> führen Sie für pip zuvor noch `python -m ensurepip -U` aus
+
 
 Danach können Sie keks im Terminal ausführen
 ```shellOder nutzen Sie das Paket in Ihren eigenem Projekt
