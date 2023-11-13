@@ -9,7 +9,7 @@
 [![Python][python-shield]][python]
 
 > [!IMPORTANT]  
-> Stellen Sie sicher, dass Sie Python zum **PATH** hinzugefügt haben
+> Stellen Sie sicher, dass Sie Python zum **PATH** hinzugefügt haben.
 
 ## Installation
 
@@ -24,12 +24,12 @@ pip install -U keks
 
 ## Verwendung
 
-Danach können Sie keks im Terminal ausführen
+Danach können Sie keks im Terminal ausführen.
 ```shellOder nutzen Sie das Paket in Ihren eigenem Projekt
 keks --help
 ```
 
-Oder benutzen Sie das Paket in Ihrem eigenen Projekt
+Oder benutzen Sie das Paket in Ihrem eigenen Projekt.
 ```python [project.py]
 import keks
 
