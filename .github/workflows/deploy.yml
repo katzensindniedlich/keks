@@ -33,11 +33,11 @@ jobs:
         working-directory: website
         run: bun install
 
-      - name: Build Website
+      - name: Build
         working-directory: website
         run: bun run build
 
-      - name: Deploy Website
+      - name: Deploy
         uses: cloudflare/pages-action@v1
         with:
           directory: website/dist
