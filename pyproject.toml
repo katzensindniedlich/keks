@@ -14,7 +14,9 @@ classifiers = [
     "License :: OSI Approved :: MIT License", 
 ]
 requires-python = "~=3.11"
-dependencies = []
+dependencies = [
+    "typer[all]"
+]
 
 [project.license]
 file = "LICENSE"
@@ -31,7 +33,7 @@ test = [
 ]
 
 [project.scripts]
-keks = "keks.__main__:cli"
+keks = "keks.__main__:app"
 
 [tool.setuptools]
 packages = [
