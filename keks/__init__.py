@@ -15,8 +15,9 @@ class VersionInfo(NamedTuple):
     def to_string(self):
         dev = self.dev
         post = self.post
-        base = f'{self.major}.{self.minor}.{self.micro}'
         level = self.releaselevel
+
+        base = f'{self.major}.{self.minor}.{self.micro}'
         suffix = ''
 
         if post:
