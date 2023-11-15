@@ -23,7 +23,7 @@ class VersionInfo(NamedTuple):
             suffix = f'.post{post}'
 
         if dev:
-            suffix += f'.dev{dev}'
+            suffix = f'{suffix}.dev{dev}'
 
         if level == 'final':
             return f'{base}{suffix}'
