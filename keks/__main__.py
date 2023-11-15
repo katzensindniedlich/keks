@@ -21,6 +21,7 @@ def version_callback(show: bool):
         print(panel)
         raise typer.Exit()
 
+
 @app.callback()
 def main(
     version: Annotated[
