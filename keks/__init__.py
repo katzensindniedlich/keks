@@ -37,7 +37,7 @@ class VersionInfo(NamedTuple):
         return f'{base}{label}{self.serial}{suffix}'
 
 
-version_info = VersionInfo(post=2)
+version_info = VersionInfo(post=3)
 
 
 __title__ = 'keks'
