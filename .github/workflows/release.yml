@@ -9,7 +9,8 @@ on:
 
   workflow_dispatch:
 
-concurrency: releases
+concurrency:
+  group: releases
 
 jobs:	
   Release:

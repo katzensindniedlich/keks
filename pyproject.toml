@@ -27,10 +27,7 @@ Source = "https://github.com/katzensindniedlich/keks"
 Webpage = "https://schokokeks.pages.dev"
 
 [project.optional-dependencies]
-test = [
-    "pytest",
-    "pytest-md"
-]
+
 
 [project.scripts]
 keks = "keks.__main__:app"
