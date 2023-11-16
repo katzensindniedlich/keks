@@ -6,7 +6,7 @@ import { defineConfig } from 'astro/config'
 
 export default defineConfig(
     {
-        site: 'https://kekse.pages.dev',
+        site: 'https://schokokeks.pages.dev',
         integrations: [
             sitemap({
                 lastmod: new Date()
