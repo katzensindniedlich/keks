@@ -1,3 +1,4 @@
+from click.utils import strip_ansi
 from typer.testing import CliRunner
 
 import keks
@@ -7,12 +8,12 @@ from keks.__main__ import app
 runner = CliRunner()
 
 def run(*args):
-    return runner.invoke(app, args, color=False)
+    return runner.invoke(app, args)
 
 
 def test_help():
     result = run('--help')
-    stdout = result.stdout
+    stdout = strip_ansi(result.stdout)
 
     assert not result.exit_code
     assert 'Usage:' in stdout
