@@ -7,7 +7,7 @@ from keks.__main__ import app
 runner = CliRunner()
 
 def run(*args):
-    return runner.invoke(app, args)
+    return runner.invoke(app, args, color=False)
 
 
 def test_help():
