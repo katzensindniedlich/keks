@@ -3,6 +3,7 @@
   Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
   Permissions-Policy: camera=(), geolocation=(), microphone=(), payment=(), usb=(), accelerometer=()
   Cache-Control: public, max-age=600, immutable
+  Content-Type-Options: nosniff
   ! Access-Control-Allow-Origin
 
 /*.html
