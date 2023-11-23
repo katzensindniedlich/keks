@@ -1,5 +1,5 @@
-from click.utils import strip_ansi
 from typer.testing import CliRunner
+from click._compat import strip_ansi
 
 import keks
 from keks.__main__ import app

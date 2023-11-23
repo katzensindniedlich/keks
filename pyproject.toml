@@ -28,7 +28,6 @@ Webpage = "https://schokokeks.pages.dev"
 
 [project.optional-dependencies]
 
-
 [project.scripts]
 keks = "keks.__main__:app"
 
@@ -39,3 +38,23 @@ packages = [
 
 [tool.setuptools.dynamic]
 version.attr = "keks.__version__"
+
+[tool.pyright]
+verboseOutput = true
+
+reportUnusedClass = "information"
+reportUnusedFunction = "information"
+reportUnusedVariable = "information"
+reportConstantRedefinition = "information"
+
+reportDeprecated = "warning"
+reportUnusedImport = "warning"
+reportImportCycles = "warning"
+reportShadowedImports = "warning"
+reportDuplicateImport = "warning"
+reportUnnecessaryCast = "warning"
+reportUnnecessaryContains = "warning"
+reportUnnecessaryIsInstance = "warning"
+reportUnnecessaryComparison = "warning"
+reportIncompatibleMethodOverride = "warning"
+reportUnnecessaryTypeIgnoreComment = "warning"
