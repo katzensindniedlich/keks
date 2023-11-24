@@ -1,9 +1,11 @@
 ---
+import config from '@config'
+
 const {
-    description
+    description=config.description
 } = Astro.props
 
-var structured = {
+const structured = {
     "@context": "https://schema.org",
     "@type": "WebSite",
     description: description
