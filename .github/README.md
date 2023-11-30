@@ -3,7 +3,7 @@
 [python]: https://www.python.org/downloads/
 [website]: https://schokokeks.pages.dev
 
-[python-shield]: https://img.shields.io/badge/Python_3.11+-3776ab?style=for-the-badge&logo=python&logoColor=white
+[python-shield]: https://img.shields.io/badge/Python_3.8+-3776ab?style=for-the-badge&logo=python&logoColor=white
 
 
 ## Anforderungen
